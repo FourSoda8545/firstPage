@@ -1,13 +1,13 @@
-<!DOCTYPE html> <!--Declara el tipo de documento y la versión html-->
+<!DOCTYPE html> <!-- Declara el tipo de documento y la versión html -->
 
-<html lang="en"> <!--Declara el documento en ESpañol-->
+<html lang="en"> <!-- Declara el documento en Español -->
 
 <head>
-
-    <link rel="stylesheet" type="text/css" href="/home/puntobat/Desktop/raton/labs/lab3/style.css">
-    <meta charset="UTF-8"> <!--Declara el tipo de codificación del documento-->
-    
+    <meta charset="UTF-8">
     <title>web DELINKUENTES</title>
+    <!-- Vincula el archivo CSS externo -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <!-- Declara el tipo de codificación del documento -->
 </head>
 
 <body>
@@ -16,60 +16,62 @@
     <p>Bienvenidos, nosotros somos delinkuentes tattoo, un grupo de tatuadores con distintos
         estilos y técnicas, con el objetivo de brindarle a usted un servicio de calidad.</p>
 
-    <ul> <!--Lista desordenada // "ol" para ordenar-->
+    <ul> <!-- Lista desordenada // "ol" para ordenar -->
         <li>A continuación, lléne el formulario por favor.</li>
     </ul>
     
-    <!--Formulario -->
-<form action="/enviar" method="post">
-    <b><label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+    <!-- Formulario -->
+    <form action="/enviar" method="post">
+        <b><label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="correo">Número / red social:</label>
+        <input type="text" id="correo" name="correo" required><br><br>
+        
+        <label for="deTa">Detalles del tatuaje: </label>
+        <textarea id="deTa" name="deTa" rows="4" cols="35"></textarea><br><br>
+        
+        <label for="opciones">Formas de pago:</label>
+        <select id="opciones" name="opciones">
+            <option value="opcion1">Efectivo</option>
+            <option value="opcion2">Tarjeta</option>
+            <option value="opcion3">Transferencia</option>
+        </select><br><br>
+        
+        
+    </form>
     
-    <label for="correo">Número / red social:</label>
-    <input type="email" id="correo" name="correo" required><br><br>
-    
-    <label for="deTa">Detalles del tatuaje: </label>
-    <textarea id="deTa" name="deTa" rows="4" cols="35"></textarea><br><br>
-    
-    <label for="opciones">Formas de pago:</label>
-    <select id="opciones" name="opciones">
-        <option value="opcion1">Efectivo</option>
-        <option value="opcion2">Tarjeta</option>
-        <option value="opcion3">Transferencia</option>
-    </select><br><br>
-    
-    <input type="submit" value="Continuar"> </b>
+    <input type="submit" value="Continuar">
     <button type="submit" value="Configuración">Configuración</button>
+    <button type="submit" value="Cerrar">Cerrar</button>
     <a href="link.com">
         <p>Haz clik aquí si tienes problemas para Continuar</p>
     </a>
-</form>
-
-<!--
-    <video width="320" height="240" controls>
-        <source src="video.mp4" type="video/mp4">
-        Tu navegador no soporta el elemento de video.
-    </video>
--->
-    
-<!-- 
-    Imagen: <img src="imagen.jpg" alt="Desc. de la img"> 
--->
-
-<!--
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
--->
-
-<!--
-    <iframe src="https://www.ejemplo.com" width="600" height="200">
-        Tu navegador no soporta el elemento de iframe.
-    </iframe>
--->
 
 
+    <!--
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    -->
+        
+    <!-- 
+        Imagen: <img src="imagen.jpg" alt="Desc. de la img"> 
+    -->
+
+    <!--
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    -->
+
+    <!--
+        <iframe src="https://www.ejemplo.com" width="600" height="200">
+            Tu navegador no soporta el elemento de iframe.
+        </iframe>
+    -->
 
 </body>
 
