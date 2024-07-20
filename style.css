@@ -42,10 +42,11 @@ p {
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    font-style: Verdana
+    font-style: Verdana;
+    font-variant-position: var(center);
 }
 label {
-    color: red;
+    color: rgb(219, 47, 47);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-style: Verdana
@@ -60,6 +61,52 @@ input {
     background-color: #f8f8f8;
     font-size: 12px;
     resize: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     font-style: Verdana;
+}
+.item {
+    background-color: rgb(173, 67, 29);
+    padding: 20px;
+    margin: 5px;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solier-box;;
+}
+.SEOS {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: 25vh;
+}
+.BAT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+.FICO {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 25vh;
+}
+.KEKCO {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: right;
+    height: 25vh;
+}
+.DACKABOY {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 25vh;
+}
+.SKATE {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    height: 25vh;
 }
